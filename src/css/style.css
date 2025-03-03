@@ -4,3 +4,46 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+  background: var(--color-3);
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 95px 1fr;
+  column-gap: 2%;
+  padding: 23px 1% 0px 1%;
+  grid-template-areas: "logo logo menu menu menu menu menu menu opcion opcion "
+                       "pre pre pre pre pre info info info info info"
+}
+.div__logo{
+  grid-area: logo;
+  /* background: orange; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 23px;
+}
+.div__logo img{
+  width: 80%;
+  height: 100%;
+  object-fit: contain;
+}
+.div__menu{
+  grid-area: menu;
+  /* background: violet; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.div__menu ul{
+  display: flex;
+  gap: 33px;
+}
+.div__menu ul li{
+  /* background: yellowgreen; */
+  list-style: none;
+}
+.div__menu ul li a{
+  color: var(--color-2);
+  text-decoration: none;
+  font-size: 28px;
+}
