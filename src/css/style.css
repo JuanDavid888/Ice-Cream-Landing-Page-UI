@@ -10,7 +10,6 @@ body{
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: 95px 1fr;
   column-gap: 2%;
-  padding: 23px 1% 0px 1%;
   grid-template-areas: "logo logo menu menu menu menu menu menu opcion opcion "
                        "pre pre pre pre pre info info info info info"
 }
@@ -20,7 +19,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 23px;
+  padding: 23px 1% 0px 1%;
 }
 .div__logo img{
   width: 80%;
@@ -33,6 +32,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 23px 1% 0px 1%;
 }
 .div__menu ul{
   display: flex;
@@ -60,7 +60,6 @@ body{
   grid-area: pre;
   /* background: blueviolet; */
   display: flex;
-  width: 785px;
   height: 663px;
   top: 81px;
   position: relative;
@@ -68,38 +67,31 @@ body{
 .div__product > img{
   position: absolute;
   right: 0;
-  top: -15px;
 }
 .div__iceCreams img:nth-child(1),
 .div__iceCreams img:nth-child(2),
 .div__iceCreams img:nth-child(3){
   position: absolute;
-  height: 663px;
   object-fit: contain;
   bottom: 0;
 }
 .div__iceCreams img:nth-child(1){
   transform: rotate(85.74deg);
-  width: 514.86px;
-  height: 746.6px;
   z-index: 5;
-  left: 0;
-  bottom: -245px;
+  left: 40px;
+  bottom: -267px;
 }
 .div__iceCreams img:nth-child(2){
   transform: rotate(57.18deg);
-  width: 447.43px;
-  height: 832.89px;
   z-index: 10;
-  left: 30px;
+  left: 55px;
   bottom: -115px;
 }
 .div__iceCreams img:nth-child(3){
   transform: rotate(32.69deg);
-  width: 447.43px;
-  height: 753.54px;
   z-index: 5;
-  left: -135px;
+  left: -120px;
+  top: -85px;
 }
 .div__info{
   grid-area: info;
@@ -107,9 +99,9 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 628px;
+  width: 650px;
   height: 294px;
-  top: 220px;
+  top: 204px;
   position: relative;
 }
 .div__info h1{
@@ -131,3 +123,90 @@ body{
   font-size: 24px;
   margin: 0px 0px 0px 24px;
 }
+.div__info .div__button{
+  position: absolute;
+  bottom: -72px;
+  right: 0;
+}
+.div__info .div__button a{
+  background: var(--color-4);
+  color: var(--color-2);
+  font-family: "Inder-Regular";
+  font-size: 24px;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+/************ Media ************/
+@media screen and (min-width: 1200px){
+  .div__product{
+    grid-area: pre;
+    /* background: blueviolet; */
+    display: flex;
+    height: 663px;
+    top: 81px;
+    position: relative;
+  }
+  .div__product > img{
+    position: absolute;
+    right: 0;
+  }
+  .div__iceCreams img:nth-child(1),
+  .div__iceCreams img:nth-child(2),
+  .div__iceCreams img:nth-child(3){
+    position: absolute;
+    object-fit: contain;
+    bottom: 0;
+  }
+  .div__iceCreams img:nth-child(1){
+    transform: rotate(85.74deg);
+    z-index: 5;
+    width: 430px;
+    left: 40px;
+    bottom: -155px;
+  }
+  .div__iceCreams img:nth-child(2){
+    transform: rotate(57.18deg);
+    z-index: 10;
+    width: 360px;
+    left: 35px;
+    bottom: -50px;
+  }
+  .div__iceCreams img:nth-child(3){
+    transform: rotate(32.69deg);
+    z-index: 5;
+    width: 360px;
+    left: -100px;
+    top: 0px;
+  }
+  .div__info{
+    grid-area: info;
+    /* background: green; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    height: 294px;
+    top: 204px;
+    position: relative;
+  }
+  .div__info h1{
+    display: flex;
+    color: var(--color-2);
+    font-family: "Inter_28pt-Bold";
+    font-size: 55px;
+  }
+  .div__info span{
+    display: flex;
+    color: var(--color-2);
+    font-family: "Lalezar-Regular";
+    font-size: 32px;
+  }
+  .div__info p{
+    display: flex;
+    color: var(--color-2);
+    font-family: "Inder-Regular";
+    font-size: 23px;
+  }
+}
+/******************************/
