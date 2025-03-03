@@ -47,3 +47,11 @@ body{
   text-decoration: none;
   font-size: 28px;
 }
+.div__option{
+  grid-area: opcion;
+  /* background: green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 33px;
+}
