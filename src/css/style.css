@@ -55,3 +55,40 @@ body{
   align-items: center;
   gap: 33px;
 }
+.div__product{
+  grid-area: pre;
+  background: blueviolet;
+  width: 900px;
+  height: 663px;
+  top: 81px;
+  position: relative;
+}
+.div__product > img{
+  position: absolute;
+  right: 0;
+}
+.div__iceCreams img:nth-child(1),
+.div__iceCreams img:nth-child(2),
+.div__iceCreams img:nth-child(3){
+  position: absolute;
+  height: 663px;
+  object-fit: contain;
+  bottom: 0;
+}
+.div__iceCreams img:nth-child(1){
+  transform: rotate(85.74deg);
+  z-index: 5;
+  left: 0;
+  bottom: -225px;
+}
+.div__iceCreams img:nth-child(2){
+  transform: rotate(57.18deg);
+  z-index: 10;
+  left: 30px;
+  bottom: -60px;
+}
+.div__iceCreams img:nth-child(3){
+  transform: rotate(32.69deg);
+  z-index: 5;
+  left: -120px;
+}
