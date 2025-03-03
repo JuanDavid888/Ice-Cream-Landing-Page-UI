@@ -59,6 +59,7 @@ body{
 .div__product{
   grid-area: pre;
   /* background: blueviolet; */
+  display: flex;
   width: 785px;
   height: 663px;
   top: 81px;
@@ -99,4 +100,34 @@ body{
   height: 753.54px;
   z-index: 5;
   left: -135px;
+}
+.div__info{
+  grid-area: info;
+  /* background: green; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 628px;
+  height: 294px;
+  top: 220px;
+  position: relative;
+}
+.div__info h1{
+  display: flex;
+  color: var(--color-2);
+  font-family: "Inter_28pt-Bold";
+  font-size: 69.56px;
+}
+.div__info span{
+  display: flex;
+  color: var(--color-2);
+  font-family: "Lalezar-Regular";
+  font-size: 32px;
+}
+.div__info p{
+  display: flex;
+  color: var(--color-2);
+  font-family: "Inder-Regular";
+  font-size: 24px;
+  margin: 0px 0px 0px 24px;
 }

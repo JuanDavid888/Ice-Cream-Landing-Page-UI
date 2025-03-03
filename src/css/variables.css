@@ -9,6 +9,10 @@
     src: url(../storage/fonts/Inter/static/Inter_28pt-SemiBold.ttf);
 }
 @font-face {
+    font-family: "Inter_28pt-Bold";
+    src: url(../storage/fonts/Inter/static/Inter_28pt-Bold.ttf);
+}
+@font-face {
     font-family: "Inder-Regular";
     src: url(../storage/fonts/Inder/Inder-Regular.ttf);
 }
