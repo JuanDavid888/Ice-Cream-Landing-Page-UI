@@ -45,6 +45,7 @@ body{
 .div__menu ul li a{
   color: var(--color-2);
   text-decoration: none;
+  font-family: "Inter_28pt-SemiBold";
   font-size: 28px;
 }
 .div__option{
@@ -57,8 +58,8 @@ body{
 }
 .div__product{
   grid-area: pre;
-  background: blueviolet;
-  width: 900px;
+  /* background: blueviolet; */
+  width: 785px;
   height: 663px;
   top: 81px;
   position: relative;
@@ -66,6 +67,7 @@ body{
 .div__product > img{
   position: absolute;
   right: 0;
+  top: -15px;
 }
 .div__iceCreams img:nth-child(1),
 .div__iceCreams img:nth-child(2),
@@ -77,18 +79,24 @@ body{
 }
 .div__iceCreams img:nth-child(1){
   transform: rotate(85.74deg);
+  width: 514.86px;
+  height: 746.6px;
   z-index: 5;
   left: 0;
-  bottom: -225px;
+  bottom: -245px;
 }
 .div__iceCreams img:nth-child(2){
   transform: rotate(57.18deg);
+  width: 447.43px;
+  height: 832.89px;
   z-index: 10;
   left: 30px;
-  bottom: -60px;
+  bottom: -115px;
 }
 .div__iceCreams img:nth-child(3){
   transform: rotate(32.69deg);
+  width: 447.43px;
+  height: 753.54px;
   z-index: 5;
-  left: -120px;
+  left: -135px;
 }
